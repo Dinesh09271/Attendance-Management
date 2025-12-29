@@ -1,0 +1,16 @@
+# Ignore backend build output
+attendance-backend/target/
+
+# Ignore environment files with secrets
+.env
+attendance-backend/.env
+Frontend/attendx---advanced-student-attendance-system/.env
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
