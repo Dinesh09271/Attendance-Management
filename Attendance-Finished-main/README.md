@@ -1,8 +1,8 @@
-# 🎓 Attendance Management System
+Attendance Management System
 
 A modern, full-stack attendance management system built with **Spring Boot**, **React**, **TypeScript**, and **MySQL**.
 
-## 📋 Table of Contents
+Table of Contents
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -16,25 +16,22 @@ A modern, full-stack attendance management system built with **Spring Boot**, **
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
 
----
 
-## ✨ Features
+Features
 
-- 🔐 **JWT-based Authentication** with role-based access control (Admin, Staff, Student)
-- 👨‍🎓 **Student Management** - Add, edit, delete, and view student records
-- 📊 **Attendance Tracking** - Mark and monitor attendance by session
-- 📈 **Reports & Analytics** - Generate attendance reports with filters
-- 🗓️ **Timetable Management** - Create and manage class schedules
-- ⚙️ **System Settings** - Configure attendance thresholds and academic year
-- 🔄 **Token Refresh** - Automatic token refresh for seamless sessions
-- 🎨 **Modern UI** - Responsive React interface with TypeScript
-- 🐳 **Docker Support** - Containerized deployment ready
+JWT-based Authentication with role-based access control (Admin, Staff, Student)
+Student Management - Add, edit, delete, and view student records
+Attendance Tracking - Mark and monitor attendance by session
+Reports & Analytics - Generate attendance reports with filters
+Timetable Management - Create and manage class schedules
+System Settings - Configure attendance thresholds and academic year
+Token Refresh - Automatic token refresh for seamless sessions
+Modern UI - Responsive React interface with TypeScript
+Docker Support - Containerized deployment ready
 
----
+Tech Stack
 
-## 🛠️ Tech Stack
-
-### Backend
+Backend
 - **Java 17**
 - **Spring Boot 4.0.1**
 - **Spring Security** with JWT
@@ -42,7 +39,7 @@ A modern, full-stack attendance management system built with **Spring Boot**, **
 - **MySQL 8.0**
 - **Maven**
 
-### Frontend
+Frontend
 - **React 19**
 - **TypeScript 5.8**
 - **Vite 6.2**
@@ -53,7 +50,7 @@ A modern, full-stack attendance management system built with **Spring Boot**, **
 
 ---
 
-## 📦 Prerequisites
+Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -65,16 +62,16 @@ Before you begin, ensure you have the following installed:
 
 ---
 
-## 🚀 Quick Start
+Quick Start
 
-### 1. Clone the Repository
+1. Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/attendance-management-system.git
 cd attendance-management-system
 ```
 
-### 2. Setup Database
+2. Setup Database
 
 ```bash
 # Login to MySQL
@@ -87,7 +84,7 @@ CREATE DATABASE attendance_db;
 mysql -u root -p attendance_db < database/schema.sql
 ```
 
-### 3. Configure Backend
+3. Configure Backend
 
 Edit `attendance-backend/src/main/resources/application.properties`:
 
@@ -98,7 +95,7 @@ spring.datasource.password=YOUR_PASSWORD
 jwt.secret=YOUR_SECRET_KEY_256_BITS_MINIMUM
 ```
 
-### 4. Run Backend
+4. Run Backend
 
 ```bash
 cd attendance-backend
@@ -110,7 +107,7 @@ mvnw.cmd spring-boot:run
 
 Backend will start on **http://localhost:8080**
 
-### 5. Configure Frontend
+5. Configure Frontend
 
 Create `Frontend/attendx---advanced-student-attendance-system/.env`:
 
@@ -118,14 +115,14 @@ Create `Frontend/attendx---advanced-student-attendance-system/.env`:
 VITE_API_BASE_URL=http://localhost:8080/api
 ```
 
-### 6. Install Frontend Dependencies
+6. Install Frontend Dependencies
 
 ```bash
 cd Frontend/attendx---advanced-student-attendance-system
 npm install
 ```
 
-### 7. Run Frontend
+7. Run Frontend
 
 ```bash
 npm run dev
@@ -133,7 +130,7 @@ npm run dev
 
 Frontend will start on **http://localhost:3000**
 
-### 8. Login
+8. Login
 
 Open http://localhost:3000 and login with default credentials:
 
@@ -145,7 +142,7 @@ Open http://localhost:3000 and login with default credentials:
 
 ---
 
-## 💻 Development Setup
+## Development Setup
 
 ### Backend Development
 
@@ -182,7 +179,7 @@ npx tsc --noEmit
 
 ---
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 ### Using Docker Compose (Recommended)
 
@@ -223,7 +220,7 @@ docker run -p 3000:3000 attendance-frontend
 
 ---
 
-## 📚 API Documentation
+## API Documentation
 
 ### Authentication Endpoints
 
@@ -329,7 +326,7 @@ Mark attendance for a session
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 ### Core Tables
 
@@ -367,7 +364,7 @@ timetable_session (1) -----> (M) session_attendance
 
 ---
 
-## 🔧 Environment Variables
+## Environment Variables
 
 ### Backend (.env or application.properties)
 
@@ -398,7 +395,7 @@ VITE_API_BASE_URL=http://localhost:8080/api
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend Issues
 
@@ -475,7 +472,7 @@ docker-compose ps
 
 ---
 
-## 📝 Project Structure
+## Project Structure
 
 ```
 attendance-management-system/
@@ -516,7 +513,7 @@ attendance-management-system/
 
 ---
 
-## 🔒 Security Considerations
+## Security Considerations
 
 1. **Change default passwords** in production
 2. **Use strong JWT secrets** (minimum 256 bits)
@@ -529,7 +526,7 @@ attendance-management-system/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
@@ -539,13 +536,13 @@ attendance-management-system/
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 👥 Default Users
+## Default Users
 
 | Username | Password | Role | Description |
 |----------|----------|------|-------------|
@@ -553,14 +550,14 @@ This project is licensed under the MIT License.
 | staff | staff123 | ROLE_STAFF | Mark attendance, view reports |
 | student | student123 | ROLE_STUDENT | View own attendance |
 
-**⚠️ IMPORTANT: Change these passwords before deploying to production!**
+** IMPORTANT: Change these passwords before deploying to production!**
 
 ---
 
-## 📞 Support
+##  Support
 
 For issues, questions, or contributions, please open an issue on GitHub.
 
 ---
 
-**Built with ❤️ using Spring Boot & React**
+**Built with using Spring Boot & React**
